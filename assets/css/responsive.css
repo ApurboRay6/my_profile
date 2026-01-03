@@ -1,0 +1,202 @@
+/* ==================================
+    Responsive Styles 
+================================== */
+
+/* Desktop & Large Tablets (Max 1200px) */
+@media (max-width: 1199px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    section,
+    header {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+}
+
+
+
+
+/* Tablets (Max 991px) */
+@media (max-width: 991px) {
+    .nav-links {
+        gap: 25px;
+    }
+
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    body.addOverly::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000bd;
+        z-index: 99;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chatbot-card {
+        grid-column: span 2;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .chatbot-card .service-thumb {
+        width: 100%;
+        height: 250px;
+    }
+
+    .project-card {
+        flex: 1 0 calc(50% - 20px) !important;
+        max-width: calc(50% - 20px) !important;
+    }
+
+    .projects-grid {
+        flex-wrap: wrap;
+    }
+
+    .service-card.bootstrap-service {
+        order: -1;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .popup_sidebar_sec {
+        display: none !important;
+    }
+
+    body.addOverly::before {
+        display: none !important;
+    }
+
+}
+
+/* Small Tablets & Large Phones (Max 767px) */
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+
+    }
+
+    .nav-right {
+        gap: 20px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+
+    .menu-bars {
+        display: block;
+    }
+
+    .popup_sidebar_sec.active {
+        display: block;
+        left: 0;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chatbot-card {
+        grid-column: span 1;
+    }
+
+    .project-card {
+        flex: 1 0 100% !important;
+        max-width: 100% !important;
+        margin-right: 0;
+    }
+
+    .form-group input {
+        padding-right: 25px;
+    }
+
+    .form-group .error-text {
+        position: unset;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer-left h2 {
+        font-size: 34px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Extra Small Phones (Max 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .profile-img-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .btn-contact {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .btn-outline {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .email-box {
+        width: 100%;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+}
