@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apurboray6.github.io/my_profile/sitemap.xml
